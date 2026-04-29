@@ -105,17 +105,12 @@ body {
     color: #fff;
 }
 
-.intro,
-.cards-section {
-    padding: 90px 8%;
-}
-
 .intro {
+    padding: 90px 8%;
     text-align: center;
 }
 
-.intro h2,
-.cards-section h2 {
+.intro h2 {
     text-transform: uppercase;
     letter-spacing: 8px;
     font-size: 36px;
@@ -128,41 +123,69 @@ body {
     color: #444;
 }
 
-.cards {
+.styles {
+    padding: 60px 8% 90px;
+    background-color: #f7f7f5;
+}
+
+.styles h2 {
+    font-size: 42px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+.styles-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
-    margin-top: 50px;
+    gap: 55px;
 }
 
-.card {
-    background-color: #fff;
-    padding: 45px;
-    min-height: 230px;
+.style-card {
+    display: block;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
-.card h3 {
-    text-transform: uppercase;
-    letter-spacing: 6px;
+.style-card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.style-card-text {
+    padding: 35px;
+}
+
+.style-card h3 {
     font-size: 30px;
-    margin-bottom: 20px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
-.card p {
+.style-card p {
     color: #555;
     margin-bottom: 25px;
 }
 
-.card a {
-    color: #222;
-    text-decoration: none;
+.style-card span {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: 13px;
 }
 
-.card a:hover {
-    border-bottom: 1px solid #222;
+.style-card:hover {
+    transform: translateY(-8px);
+}
+
+.style-card:hover img {
+    filter: grayscale(0%);
 }
 
 footer {
