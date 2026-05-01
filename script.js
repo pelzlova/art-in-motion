@@ -65,3 +65,29 @@ function showError(input, message) {
         input.classList.add("error-input");
     }
 }
+
+fetch("classes.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        const tableBody = document.querySelector("#classesTable tbody");
+        const programs = data.academy.programs;
+
+        programs.forEach(function(program) {
+            const row = document.createElement("tr");
+
+            row.innerHTML = `
+                <td>${program.style}</td>
+                <td>${program.details.level}</td>
+                <td>${program.details.teacher}</td>
+                <td>${program.details.schedule.day}</td>
+                <td>${program.details.schedule.time}</td>
+            `;
+
+            tableBody.appendChild(row);
+        });
+    })
+    .catch(function(error) {
+        console.log("Error loading JSON:", error);
+    });

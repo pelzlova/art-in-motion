@@ -1,0 +1,51 @@
+{
+  "academy": {
+    "name": "Art in Motion",
+    "programs": [
+      {
+        "style": "Ballet",
+        "details": {
+          "level": "Beginner",
+          "teacher": "Anna Urban",
+          "schedule": {
+            "day": "Monday",
+            "time": "16:00"
+          }
+        }
+      },
+      {
+        "style": "Modern Dance",
+        "details": {
+          "level": "Advanced",
+          "teacher": "Michaela Novak",
+          "schedule": {
+            "day": "Wednesday",
+            "time": "17:30"
+          }
+        }
+      },
+      {
+        "style": "Folk Dance",
+        "details": {
+          "level": "Beginner",
+          "teacher": "Eva Herman",
+          "schedule": {
+            "day": "Friday",
+            "time": "15:30"
+          }
+        }
+      },
+      {
+        "style": "Stage Skills",
+        "details": {
+          "level": "All levels",
+          "teacher": "Peter Urban",
+          "schedule": {
+            "day": "Thursday",
+            "time": "18:00"
+          }
+        }
+      }
+    ]
+  }
+}
