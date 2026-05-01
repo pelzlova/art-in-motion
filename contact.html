@@ -27,20 +27,32 @@
 <main>
 
     <section class="contact-page">
+
         <div class="contact-text">
             <h1>Contact</h1>
-            <p>Join a class and become part of Art in Motion.</p>
+
+            <p class="intro-text">
+                Join a class and become part of Art in Motion.
+            </p>
+
+            <p class="info-text">
+                Choose your dance style, tell us about your experience and we will contact you soon.
+            </p>
         </div>
 
         <form id="signupForm" class="contact-form">
+
             <label for="name">Full name</label>
             <input type="text" id="name" name="name">
+            <small class="error"></small>
 
             <label for="email">Email address</label>
             <input type="email" id="email" name="email">
+            <small class="error"></small>
 
             <label for="age">Age</label>
             <input type="number" id="age" name="age">
+            <small class="error"></small>
 
             <label for="style">Choose dance style</label>
             <select id="style" name="style">
@@ -50,25 +62,29 @@
                 <option value="folk">Folk Dance</option>
                 <option value="stage">Stage Skills</option>
             </select>
+            <small class="error"></small>
 
             <p class="form-label">Experience level</p>
             <div class="radio-group">
                 <label><input type="radio" name="experience" value="beginner"> Beginner</label>
                 <label><input type="radio" name="experience" value="advanced"> Advanced</label>
             </div>
+            <small class="error"></small>
 
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
+            <small class="error"></small>
 
             <label class="checkbox-label">
                 <input type="checkbox" id="agreement">
                 I agree with being contacted about the class.
             </label>
-
-            <p id="formMessage"></p>
+            <small class="error"></small>
 
             <button type="submit" class="btn">Send Application</button>
+
         </form>
+
     </section>
 
 </main>
@@ -78,5 +94,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
