@@ -305,3 +305,81 @@ footer {
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
+
+/* CONTACT PAGE */
+
+.contact-page {
+    padding: 100px 8% 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.contact-text h1 {
+    font-size: 64px;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form label,
+.form-label {
+    font-size: 14px;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #222;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-group input,
+.checkbox-label input {
+    width: auto;
+}
+
+#formMessage {
+    font-size: 14px;
+    color: red;
+}
